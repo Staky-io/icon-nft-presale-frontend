@@ -1,0 +1,79 @@
+/***************************************************************************************************
+ *
+ * DISPLAY
+ *
+ **************************************************************************************************/
+
+.grid-center { @apply grid place-content-center place-items-center; }
+.flex-center { @apply flex place-content-center place-items-center; }
+
+/***************************************************************************************************
+ *
+ * BORDER
+ *
+ **************************************************************************************************/
+
+.regular-border-t,
+.regular-border-l,
+.regular-border-r,
+.regular-border-b,
+.regular-border {
+    @apply border-solid;
+}
+
+.light-mode .regular-border-t,
+.light-mode .regular-border-l,
+.light-mode .regular-border-r,
+.light-mode .regular-border-b,
+.light-mode .regular-border {
+    @apply border-grey-400;
+}
+
+.dark-mode .regular-border-t,
+.dark-mode .regular-border-l,
+.dark-mode .regular-border-r,
+.dark-mode .regular-border-b,
+.dark-mode .regular-border {
+    @apply border-grey-700;
+}
+
+.regular-border-t { @apply border-t-1; }
+.regular-border-l { @apply border-l-1; }
+.regular-border-r { @apply border-r-1; }
+.regular-border-b { @apply border-b-1; }
+.regular-border { @apply border-1; }
+
+/***************************************************************************************************
+ *
+ * PSEUDO ELEMENT
+ *
+ **************************************************************************************************/
+
+.before::before { content: ""; }
+.after::after { content: ""; }
+
+/***************************************************************************************************
+ *
+ * OVERFLOW
+ *
+ **************************************************************************************************/
+
+.overflow-y-shadow {
+    background: linear-gradient(white 30%, rgba(255, 255, 255, 0)),
+        linear-gradient(rgba(255, 255, 255, 0), white 70%) 0 100%,
+        radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, .1), rgba(0, 0, 0, 0)),
+        radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, .1), rgba(0, 0, 0, 0)) 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 40px, 100% 40px, 100% 20px, 100% 20px;
+    background-attachment: local, local, scroll, scroll;
+}
+
+.overflow-x-shadow {
+    background: linear-gradient(to right, white 30%, rgba(255, 255, 255, 0)),
+        linear-gradient(to right, rgba(255, 255, 255, 0), white 70%) 100% 0%,
+        radial-gradient(farthest-side at 0 50%, rgba(0, 0, 0, .1), rgba(0, 0, 0, 0)),
+        radial-gradient(farthest-side at 100% 50%, rgba(0, 0, 0, .1), rgba(0, 0, 0, 0)) 100% 0;
+    background-repeat: no-repeat;
+    background-size: 20px 100%, 20px 100%, 10px 100%, 10px 100%;
+    background-attachment: local, local, scroll, scroll;
+}

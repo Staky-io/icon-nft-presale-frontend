@@ -1,0 +1,232 @@
+/***************************************************************************************************
+ *
+ * FADE
+ *
+ **************************************************************************************************/
+
+/**
+ * fade
+ */
+.fade-enter-active,
+.fade-leave-active {
+    transition-property: opacity, transform;
+    transition-duration: 250ms;
+}
+
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+}
+
+/**
+ * fade-quick
+ */
+.fade-quick-enter-active,
+.fade-quick-leave-active {
+    transition-property: opacity, transform;
+    transition-duration: 125ms;
+}
+
+.fade-quick-enter,
+.fade-quick-leave-to {
+    opacity: 0;
+}
+
+/**
+ * fade-scale
+ */
+.fade-scale-enter-active,
+.fade-scale-leave-active {
+    transition-property: opacity, transform;
+    transition-duration: 125ms;
+    transition-timing-function: cubic-bezier(.5, 0, 0, 1);
+}
+
+.fade-scale-enter,
+.fade-scale-leave-to {
+    opacity: 0;
+    transform: scale(0.975);
+}
+
+/**
+ * fade-up
+ */
+.fade-up-enter-active,
+.fade-up-leave-active {
+    transition-property: opacity, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(.5, 0, 0, 1);
+}
+
+.fade-up-enter,
+.fade-up-leave-to {
+    opacity: 0;
+    transform: translateY(.5rem);
+}
+
+/**
+ * fade-down
+ */
+.fade-down-enter-active,
+.fade-down-leave-active {
+    transition-property: opacity, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(.5, 0, 0, 1);
+}
+
+.fade-down-enter,
+.fade-down-leave-to {
+    opacity: 0;
+    transform: translateY(-.5rem);
+}
+
+/**
+ * fade-right
+ */
+.fade-right-enter-active,
+.fade-right-leave-active {
+    transform-origin: right;
+    transition-property: opacity, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(.5, 0, 0, 1.5);
+}
+
+.fade-right-enter,
+.fade-right-leave-to {
+    opacity: 0;
+    transform: translateX(.5rem) scale(0.975);
+}
+
+/**
+ * fade-left
+ */
+.fade-left-enter-active,
+.fade-left-leave-active {
+    transform-origin: left;
+    transition-property: opacity, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(.5, 0, 0, 1.5);
+}
+
+.fade-left-enter,
+.fade-left-leave-to {
+    opacity: 0;
+    transform: translateX(-.5rem) scale(0.975);
+}
+
+/**
+ * fade-bounce
+ */
+.fade-bounce-enter-active,
+.fade-bounce-leave-active {
+    transition-property: opacity, transform;
+    transition-duration: 125ms;
+    transition-timing-function: cubic-bezier(.5, 0, 0, 1.125);
+}
+
+.fade-bounce-enter,
+.fade-bounce-leave-to {
+    opacity: 0;
+    transform: scale(0.975);
+}
+
+
+
+
+
+/***************************************************************************************************
+ *
+ * MORPH
+ *
+ **************************************************************************************************/
+
+/**
+ * morph-rotate
+ */
+.morph-rotate-enter-active,
+.morph-rotate-leave-active {
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(.5, 0, 0, 1);
+}
+
+.morph-rotate-enter,
+.morph-rotate-leave-to {
+    transform: rotate(90deg);
+}
+
+/**
+ * morph-bounce
+ */
+.morph-bounce-enter-active,
+.morph-bounce-leave-active {
+    transition-property: opacity, transform;
+    transition-duration: 125ms;
+    transition-timing-function: cubic-bezier(.5, 0, 0, 1.5);
+}
+
+.morph-bounce-enter,
+.morph-bounce-leave-to {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+
+
+
+
+/***************************************************************************************************
+ *
+ * SLIDE
+ *
+ **************************************************************************************************/
+
+/**
+ * slide-right
+ */
+.slide-right-enter-active {
+    transition-property: opacity, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(.5, 0, 0, 1);
+}
+
+.slide-right-leave-active {
+    transition-property: opacity, transform;
+    transition-duration: 125ms;
+    transition-timing-function: cubic-bezier(.5, 0, 0, 1);
+}
+
+.slide-right-enter {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.slide-right-leave-to {
+    opacity: 0;
+    transform: translateX(0);
+}
+
+/**
+ * slide-left
+ */
+.slide-left-enter-active {
+    transition-property: opacity, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(.5, 0, 0, 1);
+}
+
+.slide-left-leave-active {
+    transition-property: opacity, transform;
+    transition-duration: 125ms;
+    transition-timing-function: cubic-bezier(.5, 0, 0, 1);
+}
+
+.slide-left-enter {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.slide-left-leave-to {
+    opacity: 0;
+    transform: translateX(0);
+}

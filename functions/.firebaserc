@@ -1,0 +1,6 @@
+{
+    "projects": {
+        "default": "staky-nuxt-firebase-starter",
+        "staky": "staky"
+    }
+}
